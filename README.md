@@ -1,15 +1,18 @@
-# MemoryManager (Operating Systems Project)
+# MemoryManager (C++ Operating Systems Project)
 
 ## Overview
-MemoryManager is a simulation of how an **Operating System manages memory**.  
-The project models memory allocation and deallocation, providing insights into  
-how OSes track and optimize memory usage for processes.
+MemoryManager is a C++ simulation of an **operating system memory manager**.  
+It allows the allocation and deallocation of memory, keeps track of free and occupied memory blocks, and demonstrates classic memory allocation algorithms:
 
-This project was developed as part of an **Operating Systems course assignment**.
+- **Best-Fit Allocation**: Allocates the smallest free block that is large enough.
+- **Worst-Fit Allocation**: Allocates the largest available block.
+
+This project was developed for an **Operating Systems course** to explore memory management concepts such as fragmentation, allocation, and block tracking.
 
 ## Features
-- Simulation of memory allocation strategies
-- Memory tracking and management
-- Process loading and unloading
-- Fragmentation handling
-- Console-based input/output
+- Simulates memory as contiguous words in bytes.
+- Tracks memory **holes** (free spaces) and **blocks** (allocated spaces).
+- Supports **best-fit** and **worst-fit** allocation strategies.
+- Memory dump to a file for analysis.
+- Flexible memory word size and dynamic initialization.
+- Modular class design for memory simulation.
